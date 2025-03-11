@@ -1,0 +1,39 @@
+.container{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    border: 20px solid rgb(11, 4, 82);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap;
+    align-content: center; */
+    /* align content only works when flex-wrap is present */
+    /* gap: 1em; */
+}
+.box{
+    font-size: 2rem;    
+    text-align: center;
+    border: solid 2px rgb(4, 4, 10);
+    width: 150px;
+    height: 150px;
+    background-color: rgb(115, 184, 207);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+.box-1{
+    order: -1;
+}
+.box-3{
+    /* flex-grow: 1; */
+    /* flex-shrink: 5; */
+    /* flex-shrink defines how fast one item shrinks in comparison with others */
+    /* flex-basis: 200px; */
+    /* flex-basis is the initial size of an item before it grows or shrinks */
+    /* flex: 1; */
+    /* flex is the shorthand for flex-grow, flex-shrink, flex-basis */
+    align-self: baseline;
+    /* unlike align-items, align-self only aligns a specific item*/
+    order: -1;
+}
